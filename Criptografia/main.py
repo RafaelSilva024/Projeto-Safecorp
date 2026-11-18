@@ -36,7 +36,7 @@ def menu_interativo():
         pacote_adulterado = pacote.copy()
         pacote_adulterado["conteudo_cifrado"] = bytes(conteudo_alterado)
         
-        print("\nAttempting decifrar pacote adulterado...")
+        print("\nTentando decifrar pacote adulterado...")
         try:
             decifrar_mensagem_hibrida(pacote_adulterado, chave_privada)
             print("[ERRO] A adulteração não foi detectada!")
